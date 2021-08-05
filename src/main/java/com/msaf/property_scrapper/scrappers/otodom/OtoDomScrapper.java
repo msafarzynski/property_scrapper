@@ -16,18 +16,18 @@ import java.util.List;
 @Component
 public class OtoDomScrapper implements PropertyScrapper {
 
-    private final static String HREF = "href";
-    private final static String OFFER_LISTING = "listing-item-link";
-    private final String LISTING_ATTR = "data-cy";
-    private final String LISTING_TITLE = "listing-item-title";
-    private final String TITLE = "title";
-    private final String ARTICLE = "article";
-    private final String MIESZKANIE_NA_SPRZEDAZ = "Mieszkanie na sprzedaż";
-    private final String SPAN = "span";
-    private final String SRC = "src";
-    private final String PICTURE = "picture";
-    private final String SITE_URI = "https://www.otodom.pl";
-    private final String P = "p";
+    private static final String HREF = "href";
+    private static final String OFFER_LISTING = "listing-item-link";
+    private static final String LISTING_ATTR = "data-cy";
+    private static final String LISTING_TITLE = "listing-item-title";
+    private static final String TITLE = "title";
+    private static final String ARTICLE = "article";
+    private static final String MIESZKANIE_NA_SPRZEDAZ = "Mieszkanie na sprzedaż";
+    private static final String SPAN = "span";
+    private static final String SRC = "src";
+    private static final String PICTURE = "picture";
+    private static final String SITE_URI = "https://www.otodom.pl";
+    private static final String P = "p";
 
     @Override
     public List<OfferDto> getOffers(String city) throws IOException {

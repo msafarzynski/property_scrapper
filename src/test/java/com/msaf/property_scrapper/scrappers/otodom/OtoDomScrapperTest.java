@@ -13,11 +13,10 @@ import java.io.IOException;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = {PropertyScrapperApplication.class})
-public class OtoDomScrapperTest {
+class OtoDomScrapperTest {
 
     @Autowired
     protected OtoDomScrapper otoDomScrapper;

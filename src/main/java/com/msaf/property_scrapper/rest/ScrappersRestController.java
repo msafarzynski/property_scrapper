@@ -16,8 +16,12 @@ import java.util.List;
 @RequestMapping("/scrapper")
 public class ScrappersRestController {
 
+    final OtoDomScrapper otoDomScrapper;
+
     @Autowired
-    OtoDomScrapper otoDomScrapper;
+    public ScrappersRestController(OtoDomScrapper otoDomScrapper) {
+        this.otoDomScrapper = otoDomScrapper;
+    }
 
     @GetMapping("/scrape")
     public OffersResponse scrape(@RequestParam(value = "city", defaultValue = "Warszawa") String city) {
