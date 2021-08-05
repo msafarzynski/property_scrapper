@@ -4,7 +4,7 @@ import lombok.*;
 
 @Getter
 @Setter
-@Builder
+@Builder(setterPrefix = "with")
 @NoArgsConstructor
 @AllArgsConstructor
 public class OfferDto {
@@ -12,7 +12,10 @@ public class OfferDto {
     private String url;
     private String price;
     private String size;
-    private String rooms;
-    private String ditrict;
+    private Integer rooms;
+    private String district;
     private String city;
+    private String location;
+    private String pictureUrl;
+    private String pricePerMeter;
 }
