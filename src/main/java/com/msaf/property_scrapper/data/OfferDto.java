@@ -4,7 +4,7 @@ import lombok.*;
 
 @Getter
 @Setter
-@Builder(setterPrefix = "with")
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class OfferDto {

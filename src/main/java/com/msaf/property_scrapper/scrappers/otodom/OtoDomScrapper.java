@@ -61,15 +61,15 @@ public class OtoDomScrapper implements PropertyScrapper {
             String pictureUrl = offerElmnt.getElementsByTag(PICTURE).get(0).getElementsByAttribute(SRC).get(0).attr(SRC);
 
             OfferDto offerDto = OfferDto.builder()
-                    .withCity(city)
-                    .withTitle(offerTitle)
-                    .withUrl(offerUrl)
-                    .withPrice(offerPrice)
-                    .withPricePerMeter(pricePerMeter)
-                    .withLocation(offerLocation)
-                    .withRooms(rooms)
-                    .withSize(size)
-                    .withPictureUrl(pictureUrl)
+                    .city(city)
+                    .title(offerTitle)
+                    .url(offerUrl)
+                    .price(offerPrice)
+                    .pricePerMeter(pricePerMeter)
+                    .location(offerLocation)
+                    .rooms(rooms)
+                    .size(size)
+                    .pictureUrl(pictureUrl)
                     .build();
 
             offerDtos.add(offerDto);
